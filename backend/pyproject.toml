@@ -8,10 +8,10 @@ dependencies = [
     "fastapi>=0.104.1",
     "uvicorn>=0.24.0",
     "sqlmodel>=0.0.16",
-    "psycopg2>=2.9.9",
+    "psycopg2-binary>=2.9.9",  # CHANGED: Switched to binary version for Vercel
     "python-jose[cryptography]>=3.3.0",
     "python-dotenv>=1.0.0",
     "better-exceptions>=0.3.3",
     "passlib>=1.7.4",
-    "bcrypt>=4.0.1",  # Added here
+    "bcrypt>=4.0.1",
 ]
