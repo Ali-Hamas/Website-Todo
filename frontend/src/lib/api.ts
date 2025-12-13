@@ -6,7 +6,8 @@ const apiFetch = async (url: string, options: RequestInit = {}) => {
   // Get token from localStorage
   const token = localStorage.getItem('auth_token');
 
-  const headers = {
+  // FIX: Added ': any' to allow adding the Authorization header dynamically
+  const headers: any = {
     'Content-Type': 'application/json',
     ...options.headers,
   };
